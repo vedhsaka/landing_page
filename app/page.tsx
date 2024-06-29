@@ -1,10 +1,21 @@
-'use client';
-import React, { useState, useEffect } from "react";
+"use client";
+import React, { useRef, useState, useEffect } from "react";
 import { Spotlight } from "../components/ui/Spotlight";
 import { DotPattern } from "../components/magicui/dot-pattern";
 import ShimmerButton from "../components/magicui/shimmer-button";
+import { AnimatedBeam } from "../components/magicui/animated-beam";
 import { PlaceholdersAndVanishInput } from "../components/ui/placeholder-and-vanish";
 import { cn } from "../libs/utils";
+import Image from 'next/image';
+
+
+
+import Icon1 from './claude_app_icon.png';
+import Icon2 from './icon-2.png';
+import Icon3 from './icon-3.jpeg';
+import OutputIcon1 from './github.png';
+import OutputIcon2 from './gitlab-icon.webp';
+import OutputIcon3 from './jenkins.png';
 
 export default function HomeContent() {
   const [showForm, setShowForm] = useState(false);
@@ -49,25 +60,23 @@ export default function HomeContent() {
     "Be the first to know when we launch"
   ];
 
+  const containerRef = useRef<HTMLDivElement>(null);
+  const inputRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+  const flameRef = useRef<HTMLDivElement>(null);
+  const outputRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+  const inputIcons = [Icon1, Icon2, Icon3];
+  const outputIcons = [OutputIcon1, OutputIcon2, OutputIcon3];
+
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
-      <Spotlight
-        className="absolute inset-0 w-full h-full opacity-0"
-        fill="white"
-      />
+    <div ref={containerRef} className="relative w-full min-h-screen overflow-hidden bg-black">
+      <Spotlight className="absolute inset-0 w-full h-full opacity-0" fill="white" />
       <DotPattern
-        width={20}
-        height={20}
-        cx={1}
-        cy={1}
-        cr={1}
-        className={cn(
-          "absolute inset-0 h-full w-full",
-          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
-        )}
+        width={20} height={20} cx={1} cy={1} cr={1}
+        className={cn("absolute inset-0 h-full w-full",
+          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]")}
       />
-      <main className="relative z-10 flex h-screen flex-col items-center justify-center">
-        <div className="text-center">
+      <main className="relative z-10 flex flex-col items-center justify-start pt-20 min-h-screen">
+        <div className="text-center mb-12">
           <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 md:text-7xl">
             Flame
           </h1>
@@ -98,7 +107,80 @@ export default function HomeContent() {
               formAction="https://getlaunchlist.com/s/aOgdIk"
             />
           )}
+          </div>
+
+<div className="flex justify-between items-center w-full max-w-4xl px-4">
+          <div className="flex flex-col space-y-8">
+          {inputRefs.map((ref, index) => (
+            <div key={`input-${index}`} ref={ref} className="w-32 h-12 rounded flex items-center justify-center text-white">
+              
+              <Image 
+                src={inputIcons[index]} 
+                alt={`Input ${index + 1}`} 
+                width={44} 
+                height={44} 
+                className="mr-2"
+              />
+            </div>
+          ))}
+
+      
+           
+          </div>
+          <div ref={flameRef} className="w-35 h-35 bg-blue-300 flex items-center justify-center text-white text-2xl font-bold">
+            Flame
+          </div>
+          <div className="flex flex-col space-y-8">
+            {outputRefs.map((ref, index) => (
+              <div key={`output-${index}`} ref={ref} className="w-32 h-12 rounded flex items-center justify-center text-white">
+
+<Image 
+                src={outputIcons[index]} 
+                alt={`Output ${index + 1}`} 
+                width={44} 
+                height={44} 
+                className="mr-2"
+              />
+                Output {index + 1}
+              </div>
+            ))}
+          </div>
         </div>
+        
+      
+
+        {inputRefs.map((fromRef, index) => (
+        <AnimatedBeam
+          key={`input-beam-${index}`}
+          containerRef={containerRef}
+          fromRef={fromRef}
+          toRef={flameRef}
+          curvature={10}
+          duration={2 + index}
+          delay={0.2 * index}
+          gradientStartColor={`hsl(${index * 40}, 100%, 50%)`}
+          gradientStopColor={`hsl(${index * 40 + 20}, 100%, 50%)`}
+          Icon={inputIcons[index]}  // Add this line to include the icon
+        />
+      ))}
+
+        {outputRefs.map((toRef, index) => (
+          <AnimatedBeam
+            key={`output-beam-${index}`}
+            containerRef={containerRef}
+            fromRef={flameRef}
+            toRef={toRef}
+            curvature={10}
+            duration={5 + index}
+            delay={0.8 * index}
+            gradientStartColor={`hsl(${index * 40 + 180}, 100%, 50%)`}
+            gradientStopColor="#1A237E"
+            Icon={outputIcons[index]}  // Add this line to include the icon
+          />
+        ))}
+
+
+        
       </main>
     </div>
   );
