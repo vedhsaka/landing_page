@@ -42,6 +42,7 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   startYOffset = 0,
   endXOffset = 0,
   endYOffset = 0,
+  icon: Icon,
 }) => {
   const id = useId();
   const [pathD, setPathD] = useState("");
@@ -147,6 +148,20 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
         strokeOpacity="1"
         strokeLinecap="round"
       />
+      {Icon && (
+        <motion.g
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: delay + 0.2, duration: 0.5 }}
+        >
+          <Icon
+            width={24}
+            height={24}
+            x={svgDimensions.width / 2 - 12}
+            y={svgDimensions.height / 2 - 12}
+          />
+        </motion.g>
+      )}
       <defs>
         <motion.linearGradient
           className="transform-gpu"
