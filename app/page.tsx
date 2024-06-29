@@ -34,7 +34,6 @@ export default function HomeContent() {
       });
 
       if (response.ok) {
-        console.log('Form submitted successfully');
         setIsSubmitted(true); // Set the submission status to true
       } else {
         console.error('Form submission error:', response.statusText);
@@ -76,10 +75,10 @@ export default function HomeContent() {
             Automate your voice API testing
           </h2>
         </div>
-        <div className="mt-12 w-full/2 max-w-md">
+        <div className="mt-12 w-full max-w-md">
           {!showForm ? (
             <ShimmerButton 
-              className="shadow-2xl w-full" 
+              className="shadow-2xl w-1/2 mx-auto" 
               shimmerSize="0.08em"
               onClick={() => setShowForm(true)}
             >
