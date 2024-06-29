@@ -88,7 +88,7 @@ export default function HomeContent() {
               </span>
             </ShimmerButton>
           ) : isSubmitted ? (
-            <div className="text-center text-black bg-yellow-300 p-4 rounded-md">
+            <div className="text-center text-black dark:text-white bg-transparent p-4 rounded-md">
               Thank you, we will get back to you.
             </div>
           ) : (
