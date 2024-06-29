@@ -109,27 +109,34 @@ export default function HomeContent() {
           )}
           </div>
 
-<div className="flex justify-between items-center w-full max-w-4xl px-4">
+
+        <div className="flex justify-between items-center w-full max-w-4xl px-4" style={{ marginTop: "300px" }}>
           <div className="flex flex-col space-y-8">
-          {inputRefs.map((ref, index) => (
-            <div key={`input-${index}`} ref={ref} className="w-32 h-12 rounded flex items-center justify-center text-white">
-              
-              <Image 
-                src={inputIcons[index]} 
-                alt={`Input ${index + 1}`} 
-                width={44} 
-                height={44} 
-                className="mr-2"
-              />
-            </div>
-          ))}
+              {inputRefs.map((ref, index) => (
+                <div key={`input-${index}`} ref={ref} className="w-32 h-12 rounded flex items-center justify-center text-white">
+                  
+                  <Image 
+                    src={inputIcons[index]} 
+                    alt={`Input ${index + 1}`} 
+                    width={44} 
+                    height={44} 
+                    className="mr-2"
+                  />
+                </div>
+              ))}
 
       
            
-          </div>
-          <div ref={flameRef} className="w-35 h-35 bg-blue-300 flex items-center justify-center text-white text-2xl font-bold">
+            </div>
+          <div 
+            ref={flameRef} 
+            className="relative w-200 h-100 bg-white flex items-center justify-center text-black text-2xl font-bold border-4 border-shiny shadow-xl"
+            style={{ zIndex: "300" }}
+            >
             Flame
           </div>
+
+
           <div className="flex flex-col space-y-8">
             {outputRefs.map((ref, index) => (
               <div key={`output-${index}`} ref={ref} className="w-32 h-12 rounded flex items-center justify-center text-white">
@@ -178,7 +185,6 @@ export default function HomeContent() {
             Icon={outputIcons[index]}  // Add this line to include the icon
           />
         ))}
-
 
         
       </main>
