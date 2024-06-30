@@ -62,7 +62,7 @@ export default function Integrations() {
   return (
     <HomeSection>
       <Header
-        description="Leverage the most widely used tools with seamless integrations to streamline your testing workflows."
+        title="Leverage the most widely used tools with seamless integrations to streamline your testing workflows."
         className="text-white" // Updated text color to white
       />
       <div

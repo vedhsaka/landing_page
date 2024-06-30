@@ -21,18 +21,19 @@ const FeaturesSection: React.FC = () => {
         </h2>
         <BentoGrid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[18rem]">
           <BentoCard
-            name="Test with built-in test cases"
-            className="col-span-1 lg:col-span-3 row-span-1"
-            background={<TestCaseAnimation />}
-            Icon={TestTubeIcon}
-            description="Evaluate your API with diverse voice samples, testing for hallucinations, accents, pauses, and more. Includes both human and synthetic voices."
-          />
+                      name="Test with built-in test cases"
+                      className="col-span-1 lg:col-span-3 row-span-1"
+                      background={<TestCaseAnimation />}
+                      Icon={TestTubeIcon}
+                      description="Evaluate your API with diverse voice samples, testing for hallucinations, accents, pauses, and more. Includes both human and synthetic voices."
+                      href={''} cta={''}          />
            <BentoCard
             name="Evaluate output with different LLMs"
             className="col-span-1"
             background={<BrainAnimation />}
             Icon={BrainCircuitIcon}
             description="Compare results across multiple language models."
+            href={''} cta={''}
           />
           <BentoCard
             name="Share with team"
@@ -40,6 +41,7 @@ const FeaturesSection: React.FC = () => {
             background={<ShareAnimation />}
             Icon={UsersIcon}
             description="Collaborate seamlessly with your team members."
+            href={''} cta={''}
           />
           <BentoCard
             name="Check latency"
@@ -48,6 +50,7 @@ const FeaturesSection: React.FC = () => {
             Icon={GaugeIcon}
             description="Monitor and optimize your system's performance."
             href="#latency-check"
+            cta={''}
           />
           <BentoCard
             name="Run manually or sequentially"
@@ -56,6 +59,7 @@ const FeaturesSection: React.FC = () => {
             Icon={PlayIcon}
             description="Flexible execution options for your workflows."
             href="#execution-options"
+            cta={''}
           />
           <BentoCard
             name="Run in CI/CD pipelines"
@@ -64,6 +68,7 @@ const FeaturesSection: React.FC = () => {
             Icon={GitBranchIcon}
             description="Seamlessly integrate with your CI/CD processes."
             href="#cicd-integration"
+            cta={''}
           />
           <BentoCard
             name="Easy integration and configuration"
@@ -72,6 +77,7 @@ const FeaturesSection: React.FC = () => {
             Icon={SettingsIcon}
             description="Quick setup with intuitive configuration options."
             href="#easy-setup"
+            cta={''}
           />
         </BentoGrid>
       </div>
