@@ -14,7 +14,7 @@ import GitHubIcon from "../components/img/github.png";
 import GitLabIcon from "../components/img/gitlab.png";
 import JenkinsIcon from "../components/img/jenkins.svg";
 import DeepgramIcon from "../components/img/deepgram.png";
-import FlameIcon from "../components/img/Flame.png";
+import FlameIcon from "../components/img/flame.png";
 import ClaudeIcon from "../components/img/claude.png";
 
 interface LogoProps {

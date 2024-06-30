@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from "react";
-import { Spotlight } from "../components/ui/spotlight";
+import { Spotlight } from "../components/ui/spot-light";
 import { DotPattern } from "../components/magicui/dot-pattern";
 import ShimmerButton from "../components/magicui/shimmer-button";
 import { PlaceholdersAndVanishInput } from "../components/ui/placeholder-and-vanish";
