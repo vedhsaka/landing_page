@@ -4,16 +4,15 @@ import "./globals.css";
 import Script from 'next/script'
 import { ReactNode } from 'react'
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Flame - Automate Your Voice API Testing',
-  description: 'Join the waitlist for Flame, the innovative solution for automating voice API testing.',
-  keywords: ['voice API', 'API testing', 'automation', 'Flame'],
+  title: 'Flame - Advanced Voice API Testing Automation',
+  description: 'Flame is the ultimate voice API testing platform for AI-powered call centers and voice applications. Our automated tools rigorously test latency, accent recognition, and hallucination detection across various voice AI infrastructures. Streamline your voice API integration and ensure top-notch performance with Flame - the Postman for voice APIs.',
+  keywords: ['voice API testing', 'automated voice testing', 'call center AI testing', 'speech-to-text validation', 'text-to-speech quality assurance', 'voice AI latency testing', 'accent recognition testing', 'AI hallucination detection', 'conversational AI testing', 'voice API performance metrics', 'voice bot testing tools', 'voice interface QA', 'voice API integration testing', 'speech recognition accuracy testing', 'voice AI benchmarking', 'AI voice testing', 'machine learning voice analysis', 'natural language processing testing', 'virtual agent testing', 'IVR system testing', 'voice synthesis testing', 'multilingual voice AI testing', 'voice API stress testing', 'voice API security testing', 'voice QA tools', 'end-to-end voice testing'],
   openGraph: {
-    title: 'Flame - Automate Your Voice API Testing',
-    description: 'Join the waitlist for Flame, the innovative solution for automating voice API testing.',
+    title: 'Flame - Advanced Voice API Testing Automation',
+    description: 'Automate and optimize your voice API testing with Flame. Ensure top performance for AI-powered call centers and voice applications.',
     url: 'https://withflame.com',
     siteName: 'Flame',
     locale: 'en_US',
@@ -21,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Flame - Automate Your Voice API Testing',
-    description: 'Join the waitlist for Flame, the innovative solution for automating voice API testing.',
+    title: 'Flame - Advanced Voice API Testing Automation',
+    description: 'Automate and optimize your voice API testing with Flame. Ensure top performance for AI-powered call centers and voice applications.',
   },
   robots: {
     index: true,
