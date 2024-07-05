@@ -61,22 +61,10 @@ export default function Integrations() {
 
   return (
     <HomeSection>
-      {/* <Header
-        title="Leverage the most widely used tools with seamless integrations to streamline your testing workflows."
-        className="text-white" // Updated text color to white
-      /> */}
-
       <Header
         title="Leverage the most widely used tools with seamless integrations to streamline your testing workflows."
-        className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide leading-tight"
-        style={{
-            fontFamily: "'Inter', 'Helvetica', 'Arial', sans-serif",
-            textShadow: '0 2px 4px rgba(0,0,0,0.1)'
-        }}
+        className="text-white" // Updated text color to white
       />
-
-
-
       <div
         className="relative flex w-full mx-auto max-w-3xl items-center justify-between overflow-hidden rounded bg-transparent py-4 px-2 md:p-12 h-[400px]" // Updated background to transparent
         ref={containerRef}
