@@ -6,7 +6,15 @@ import { Metadata } from 'next';
 
 const POSTS_DIR = path.join(process.cwd(), 'app/blogPosts');
 
-function getBlogPost(slug: string) {
+interface BlogPost {
+  title: string;
+  date: string;
+  description: string;
+  content: string;
+  slug: string;
+}
+
+function getBlogPost(slug: string): BlogPost | null {
   const filePath = path.join(POSTS_DIR, `${slug}.mdx`);
   if (!fs.existsSync(filePath)) return null;
 
@@ -14,7 +22,9 @@ function getBlogPost(slug: string) {
   const { data, content } = matter(fileContent);
 
   return {
-    ...data,
+    title: data.title || 'Untitled Post',
+    date: data.date || 'No date',
+    description: data.description || '',
     content,
     slug,
   };
