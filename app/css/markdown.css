@@ -1,0 +1,41 @@
+.markdown {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .markdown h1,
+  .markdown h2,
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  .markdown p {
+    margin-bottom: 1em;
+  }
+  
+  .markdown ul,
+  .markdown ol {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .markdown li {
+    margin-bottom: 0.5em;
+    list-style-type: disc;
+
+  }
+  
+  .markdown a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .markdown a:hover {
+    text-decoration: underline;
+  }
+  

@@ -2,7 +2,10 @@ import { notFound } from 'next/navigation';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Metadata } from 'next';
+import '../../css/markdown.css';
 
 const POSTS_DIR = path.join(process.cwd(), 'app/blogPosts');
 
@@ -65,7 +68,11 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     <article className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
       <p className="text-gray-500 mb-4">{post.date}</p>
-      <div className="prose lg:prose-xl" dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div className="markdown">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {post.content}
+        </ReactMarkdown>
+      </div>
     </article>
   );
 }
