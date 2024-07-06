@@ -69,13 +69,13 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <article className="container mx-auto px-4 py-8">
+    <article className="container mx-auto px-4 py-8 content-container">
+      <div className="markdown">
       <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
       <p className="text-gray-500 mb-4">{post.date}</p>
         {post.image && (
           <img src={post.image} alt={post.title} className="mb-4 w-full h-auto" />
         )}
-      <div className="markdown">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {post.content}
         </ReactMarkdown>

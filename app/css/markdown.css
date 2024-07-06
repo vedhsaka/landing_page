@@ -1,3 +1,6 @@
+.content-container {
+    width: 80%;
+}
 .markdown {
     font-family: Arial, sans-serif;
     line-height: 1.6;
