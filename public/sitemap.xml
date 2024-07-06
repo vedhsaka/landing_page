@@ -12,5 +12,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://withflame.com/blog/voice-ai-evolution</loc>
+    <lastmod>2024-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://withflame.com/blog/voice-ai-customer-care</loc>
+    <lastmod>2024-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Add more URLs for other pages and blog posts -->
 </urlset>
