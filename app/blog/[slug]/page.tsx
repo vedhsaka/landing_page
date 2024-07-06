@@ -15,6 +15,7 @@ interface BlogPost {
   description: string;
   content: string;
   slug: string;
+  image: string
 }
 
 function getBlogPost(slug: string): BlogPost | null {
@@ -30,6 +31,7 @@ function getBlogPost(slug: string): BlogPost | null {
     description: data.description || '',
     content,
     slug,
+    image: data.image || '', // Add this line
   };
 }
 
@@ -48,6 +50,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       description: post.description,
       type: 'article',
       url: `https://withflame.com/blog/${params.slug}`,
+      images: [post.image],
+
     },
     twitter: {
       card: 'summary_large_image',
@@ -68,6 +72,9 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     <article className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
       <p className="text-gray-500 mb-4">{post.date}</p>
+        {post.image && (
+          <img src={post.image} alt={post.title} className="mb-4 w-full h-auto" />
+        )}
       <div className="markdown">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {post.content}
