@@ -27,11 +27,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  themeColor: '#000000',
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
-  },
+  }
 };
 
 interface RootLayoutProps {
@@ -42,6 +41,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
+      <meta name="theme-color" content="#000000" />
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-FFX2S4LYL2`}
