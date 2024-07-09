@@ -28,7 +28,13 @@ export async function GET() {
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Add more URLs for other pages and blog posts -->
+
+  <url>
+    <loc>https://withflame.com/blog/character-ai</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>`, {
     headers: { 'Content-Type': 'application/xml' },
   })
