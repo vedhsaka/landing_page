@@ -1,10 +1,14 @@
+body {
+    background: white !important;
+    color: black;
+}
 .content-container {
     width: 80%;
 }
 .markdown {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #f1f8ffc9;
+    color: #19191a;
   }
   
   .markdown h1,
