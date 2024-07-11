@@ -7,8 +7,8 @@ import { ReactNode } from 'react'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Flame - Advanced Voice API Testing Automation | AI Call Center Solutions',
-  description: 'Flame revolutionizes voice API testing for AI-powered call centers and voice applications. Our automated platform rigorously tests latency, accent recognition, and hallucination detection. Optimize your voice AI infrastructure with Flame - the ultimate Postman for voice APIs.',
+  title: 'Flame - Advanced Voice API Testing Automation',
+  description: 'Flame is the ultimate voice API testing platform for AI-powered call centers and voice applications. Our automated tools rigorously test latency, accent recognition, and hallucination detection across various voice AI infrastructures. Streamline your voice API integration and ensure top-notch performance with Flame - the Postman for voice APIs.',
   keywords: [
     // Original keywords
     'voice API testing', 'automated voice testing', 'call center AI testing', 'speech-to-text validation',
@@ -48,38 +48,26 @@ export const metadata: Metadata = {
     'voice AI continuous learning validation', 'AI call center predictive analytics', 'voice API service level agreement testing',
   ],
   openGraph: {
-    title: 'Flame - Advanced Voice API Testing Automation for AI Call Centers',
-    description: 'Revolutionize your voice API testing with Flame. Ensure optimal performance for AI-powered call centers and voice applications with our cutting-edge automation platform.',
+    title: 'Flame - Advanced Voice API Testing Automation',
+    description: 'Automate and optimize your voice API testing with Flame. Ensure top performance for AI-powered call centers and voice applications.',
     url: 'https://withflame.com',
-    siteName: 'Flame - Voice AI Testing',
+    siteName: 'Flame',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Flame - Advanced Voice API Testing for AI-Powered Call Centers',
-    description: 'Optimize your voice AI infrastructure with Flame. Automate testing for latency, accent recognition, and hallucination detection in AI call centers.',
+    title: 'Flame - Advanced Voice API Testing Automation',
+    description: 'Automate and optimize your voice API testing with Flame. Ensure top performance for AI-powered call centers and voice applications.',
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
-  },
-  verification: {
-    google: 'your-google-site-verification-code',
-    yandex: 'your-yandex-verification-code',
-    bing: 'your-bing-verification-code',
-  },
+  }
 };
 
 interface RootLayoutProps {
@@ -90,8 +78,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#000000" />
-        <link rel="canonical" href="https://withflame.com" />
+      <meta name="theme-color" content="#000000" />
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-FFX2S4LYL2`}
