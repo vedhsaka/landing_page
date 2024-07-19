@@ -78,6 +78,10 @@ export default function HomeContent() {
             <h2 className="mt-4 text-xl font-semibold text-neutral-200 md:text-2xl">
               Automate Testing Of Your Voice Agents
             </h2>
+
+            <p className="mt-6 text-neutral-200" style={{ width: '60%', margin: '1.5rem auto' }}>
+               Simplify testing your Voice AI Agents and Voice AI applications using Flame. Effortlessly test and monitor voice APIs, WebSocket APIs, and conversational AI systems.  Say goodbye to manual tasks and hello to automated, reusable voice test cases that accelerate feature deployment and enhance quality. 
+            </p>
           </div>
           <div className="mt-12 w-full max-w-md">
             {!showForm ? (
