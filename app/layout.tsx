@@ -79,6 +79,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <head>
       <meta name="theme-color" content="#000000" />
+      <meta name="google-site-verification" content="We8336zdpSjE2jH88dbRSvfbDyIbN9iwJRxnlohtJro" />
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-FFX2S4LYL2`}
