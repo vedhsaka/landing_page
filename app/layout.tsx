@@ -7,8 +7,8 @@ import { ReactNode } from 'react'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Flame - Advanced Voice API Testing Automation',
-  description: 'Flame is the ultimate voice API testing platform for AI-powered call centers and voice applications. Our automated tools rigorously test latency, accent recognition, and hallucination detection across various voice AI infrastructures. Streamline your voice API integration and ensure top-notch performance with Flame - the Postman for voice APIs.',
+  title: 'NotHotDog - Advanced Voice API Testing Automation',
+  description: 'NotHotDog is the ultimate voice API testing platform for AI-powered call centers and voice applications. Our automated tools rigorously test latency, accent recognition, and hallucination detection across various voice AI infrastructures. Streamline your voice API integration and ensure top-notch performance with NotHotDog - the Postman for voice APIs.',
   keywords: [
     // Original keywords
     'voice API testing', 'automated voice testing', 'call center AI testing', 'speech-to-text validation',
@@ -48,17 +48,17 @@ export const metadata: Metadata = {
     'voice AI continuous learning validation', 'AI call center predictive analytics', 'voice API service level agreement testing',
   ],
   openGraph: {
-    title: 'Flame - Advanced Voice API Testing Automation',
-    description: 'Automate and optimize your voice API testing with Flame. Ensure top performance for AI-powered call centers and voice applications.',
-    url: 'https://withflame.com',
-    siteName: 'Flame',
+    title: 'NotHotDog - Advanced Voice API Testing Automation',
+    description: 'Automate and optimize your voice API testing with NotHotDog. Ensure top performance for AI-powered call centers and voice applications.',
+    url: 'https://NotHotDog.dev',
+    siteName: 'NotHotDog',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Flame - Advanced Voice API Testing Automation',
-    description: 'Automate and optimize your voice API testing with Flame. Ensure top performance for AI-powered call centers and voice applications.',
+    title: 'NotHotDog - Advanced Voice API Testing Automation',
+    description: 'Automate and optimize your voice API testing with NotHotDog. Ensure top performance for AI-powered call centers and voice applications.',
   },
   robots: {
     index: true,

@@ -48,7 +48,7 @@ export default function HomeContent() {
 
   const placeholders = [
     "Enter your email to join the waitlist",
-    "Stay updated on Flame's progress",
+    "Stay updated on NotHotDog's progress",
     "Be the first to know when we launch"
   ];
 
@@ -72,15 +72,15 @@ export default function HomeContent() {
         />
         <main className="relative z-10 flex h-screen flex-col items-center justify-center">
           <div className="text-center">
-            <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 md:text-7xl">
-              Flame
-            </h1>
+          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-700 bg-opacity-50 md:text-7xl">
+            NotHotDog
+          </h1>
             <h2 className="mt-4 text-xl font-semibold text-neutral-200 md:text-2xl">
               Automate Testing Of Your Voice Agents
             </h2>
-
-            <p className="mt-6 text-neutral-200" style={{ width: '60%', margin: '1.5rem auto' }}>
-               Simplify testing your Voice AI Agents and Voice AI applications using Flame. Effortlessly test and monitor voice APIs, WebSocket APIs, and conversational AI systems.  Say goodbye to manual tasks and hello to automated, reusable voice test cases that accelerate feature deployment and enhance quality. 
+            <p className="mt-6 text-neutral-200 opacity-0 transition-opacity duration-300"
+              style={{ width: '60%', margin: '1.5rem auto' }}>
+              Simplify testing your Voice AI Agents and Voice AI applications using NotHotDog. Effortlessly test and monitor voice APIs, WebSocket APIs, and conversational AI systems. Say goodbye to manual tasks and hello to automated, reusable voice test cases that accelerate feature deployment and enhance quality.
             </p>
           </div>
           <div className="mt-12 w-full max-w-md">
@@ -116,7 +116,7 @@ export default function HomeContent() {
           
     {/* Footer */}
     <footer className="bg-black text-white text-center p-4 border-t border-gray-600 mt-4">
-      <p>&copy; Flame 2024</p>
+      <p>&copy; NotHotDog 2024</p>
       <p>
         <a href="/blog" className="text-white underline">
           Visit our Blog

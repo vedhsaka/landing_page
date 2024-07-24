@@ -43,13 +43,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${post.title} | Flame Blog`,
+    title: `${post.title} | NotHotDog Blog`,
     description: post.description,
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
-      url: `https://withflame.com/blog/${params.slug}`,
+      url: `https://NotHotDog.dev/blog/${params.slug}`,
       images: [post.image],
 
     },
