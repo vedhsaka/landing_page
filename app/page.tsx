@@ -7,6 +7,7 @@ import { PlaceholdersAndVanishInput } from "../components/ui/placeholder-and-van
 import { cn } from "../libs/utils";
 import Integrations from "./integrations";
 import FeaturesSection from "./features";
+import Link from 'next/link';
 
 
 export default function HomeContent() {
@@ -70,23 +71,32 @@ export default function HomeContent() {
             "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
           )}
         />
+
+        <div className="absolute top-4 right-4 z-50">
+          <Link href="https://app.nothotdog.dev">
+            <ShimmerButton className="px-4 py-2 text-sm">
+              Try Alpha
+            </ShimmerButton>
+          </Link>
+        </div>
         <main className="relative z-10 flex h-screen flex-col items-center justify-center">
           <div className="text-center">
           <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-700 bg-opacity-50 md:text-7xl">
             NotHotDog
           </h1>
             <h2 className="mt-4 text-xl font-semibold text-neutral-200 md:text-2xl">
-              Automate Testing Of Your Voice Agents
+              Automate Testing Of Your AI Agents
             </h2>
             <p className="mt-6 text-neutral-200 opacity-0 transition-opacity duration-300"
               style={{ width: '60%', margin: '1.5rem auto' }}>
-              Simplify testing your Voice AI Agents and Voice AI applications using NotHotDog. Effortlessly test and monitor voice APIs, WebSocket APIs, and conversational AI systems. Say goodbye to manual tasks and hello to automated, reusable voice test cases that accelerate feature deployment and enhance quality.
+              Simplify testing your AI Agents and Voice AI applications using NotHotDog. Effortlessly test and monitor voice APIs, WebSocket APIs, and conversational AI systems. Say goodbye to manual tasks and hello to automated, reusable voice test cases that accelerate feature deployment and enhance quality.
             </p>
           </div>
-          <div className="mt-12 w-full max-w-md">
-            {!showForm ? (
+          <div className="mt-12 w-full max-w-xl flex justify-center space-x-4">
+          {!showForm ? (
+            <>
               <ShimmerButton 
-                className="shadow-2xl w-1/2 mx-auto" 
+                className="shadow-2xl" 
                 shimmerSize="0.08em"
                 onClick={() => setShowForm(true)}
               >
@@ -94,6 +104,17 @@ export default function HomeContent() {
                   Join the Waitlist
                 </span>
               </ShimmerButton>
+              <Link href="https://calendly.com/nehasuresh/1-1-discussion?">
+                <ShimmerButton 
+                  className="shadow-2xl" 
+                  shimmerSize="0.08em"
+                >
+                  <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                    Book a Demo
+                  </span>
+                </ShimmerButton>
+              </Link>
+            </>
             ) : isSubmitted ? (
               <div className="text-center text-white dark:text-white bg-transparent p-4 rounded-md">
                 Thank you, we will get back to you.
