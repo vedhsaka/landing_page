@@ -131,7 +131,6 @@ export default function HomeContent() {
         </main>
       </div>
       <Integrations />
-  
       <FeaturesSection />
           
           
