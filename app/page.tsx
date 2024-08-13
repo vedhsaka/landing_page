@@ -71,14 +71,6 @@ export default function HomeContent() {
             "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
           )}
         />
-
-        <div className="absolute top-4 right-4 z-50">
-          <Link href="https://app.nothotdog.dev">
-            <ShimmerButton className="px-4 py-2 text-sm">
-              Try Alpha
-            </ShimmerButton>
-          </Link>
-        </div>
         <main className="relative z-10 flex h-screen flex-col items-center justify-center">
           <div className="text-center">
           <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-700 bg-opacity-50 md:text-7xl">
