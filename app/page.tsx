@@ -71,6 +71,15 @@ export default function HomeContent() {
             "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
           )}
         />
+       <div className="absolute top-4 right-4 z-50">
+          <a href="https://www.producthunt.com/posts/nothotdog-alpha?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-nothotdog&#0045;alpha" target="_blank" rel="noopener noreferrer">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=474682&theme=light" 
+                 alt="NotHotDog&#0032;&#0040;Alpha&#0041; - Test&#0032;your&#0032;LLM&#0032;powered&#0032;APIs&#0032;&#0038;&#0032;AI&#0032;agents | Product Hunt" 
+                 style={{width: '250px', height: '54px'}} 
+                 width="250" 
+                 height="54" />
+          </a>
+        </div>
         <main className="relative z-10 flex h-screen flex-col items-center justify-center">
           <div className="text-center">
           <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-orange-700 bg-opacity-50 md:text-7xl">
