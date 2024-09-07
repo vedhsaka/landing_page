@@ -138,11 +138,6 @@ export default function HomeContent() {
     {/* Footer */}
     <footer className="bg-black text-white text-center p-4 border-t border-gray-600 mt-4">
       <p>&copy; NotHotDog 2024</p>
-      <p>
-        <a href="/blog" className="text-white underline">
-          Visit our Blog
-        </a>
-      </p>
     </footer>
 
     </div>
