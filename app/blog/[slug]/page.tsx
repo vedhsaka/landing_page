@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { notFound } from 'next/navigation';
 import fs from 'fs';
 import path from 'path';
@@ -6,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Metadata } from 'next';
 import '../../css/markdown.css';
-export const runtime = 'edge';
+
 
 const POSTS_DIR = path.join(process.cwd(), 'app/blogPosts');
 
