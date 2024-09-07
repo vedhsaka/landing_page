@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Metadata } from 'next';
 import '../../css/markdown.css';
+export const runtime = 'edge';
 
 const POSTS_DIR = path.join(process.cwd(), 'app/blogPosts');
 
