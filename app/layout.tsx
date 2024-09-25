@@ -7,8 +7,7 @@ import { ReactNode } from 'react'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'NotHotDog - Advanced Voice API Testing Automation',
-  description: 'NotHotDog is the ultimate voice API testing platform for AI-powered call centers and voice applications. Our automated tools rigorously test latency, accent recognition, and hallucination detection across various voice AI infrastructures. Streamline your voice API integration and ensure top-notch performance with NotHotDog - the Postman for voice APIs.',
+  title: 'NotHotDog - AI Powered API testing tool',
   keywords: [
     // Original keywords
     'voice API testing', 'automated voice testing', 'call center AI testing', 'speech-to-text validation',
@@ -48,8 +47,7 @@ export const metadata: Metadata = {
     'voice AI continuous learning validation', 'AI call center predictive analytics', 'voice API service level agreement testing',
   ],
   openGraph: {
-    title: 'NotHotDog - Advanced Voice API Testing Automation',
-    description: 'Automate and optimize your voice API testing with NotHotDog. Ensure top performance for AI-powered call centers and voice applications.',
+  title: 'NotHotDog - AI Powered API Testing Tool',
     url: 'https://NotHotDog.dev',
     siteName: 'NotHotDog',
     locale: 'en_US',
@@ -57,8 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NotHotDog - Advanced Voice API Testing Automation',
-    description: 'Automate and optimize your voice API testing with NotHotDog. Ensure top performance for AI-powered call centers and voice applications.',
+    title: 'NotHotDog - AI Powered API Testing Tool',
   },
   robots: {
     index: true,
